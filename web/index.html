@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CampusVerse — Digital Campus Ecosystem</title>
+  <meta name="description" content="CampusVerse unifies study, work, social, and wellbeing in one campus app." />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="CampusVerse — Digital Campus Ecosystem" />
+  <meta property="og:description" content="CampusVerse unifies study, work, social, and wellbeing in one campus app." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/logo.svg" />
+  <meta property="og:url" content="/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CampusVerse — Digital Campus Ecosystem" />
+  <meta name="twitter:description" content="CampusVerse unifies study, work, social, and wellbeing in one campus app." />
+  <meta name="twitter:image" content="./assets/logo.svg" />
+  <link rel="icon" href="./assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="#home" class="brand">
+      <img src="./assets/logo.svg" alt="CampusVerse logo" class="logo"/>
+      <span>CampusVerse</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav">
+      <a href="#study">Study Hub</a>
+      <a href="#life">Life Feed</a>
+      <a href="#work">Workspace</a>
+      <a href="#relation">Relation Hub</a>
+      <a href="#chill">Chill Zone</a>
+      <a href="#admin">Admin</a>
+      <button id="lang" class="lang" aria-label="Change language">EN</button>
+    </nav>
+  </header>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Building the Future of University Life</h1>
+        <p>One smart app for studying, working, socializing, and wellbeing — with privacy-first insights for universities.</p>
+        <div class="cta">
+          <a href="#demo" class="btn primary">View Demo</a>
+          <a href="#contact" class="btn">Partner with us</a>
+        </div>
+      </div>
+      <div class="hero-art"></div>
+    </section>
+    <section id="study" class="section">
+      <h2>Study Hub</h2>
+      <p>Focus rooms, study partners, GPA tracking, and progress analytics to learn smarter.</p>
+    </section>
+    <section id="life" class="section alt">
+      <h2>Life Feed</h2>
+      <p>Campus-only space to share achievements, emotions, and experiences with peers.</p>
+    </section>
+    <section id="work" class="section">
+      <h2>Workspace</h2>
+      <p>Marketplace for student jobs, projects, and skill exchange.</p>
+    </section>
+    <section id="relation" class="section alt">
+      <h2>Relation Hub</h2>
+      <p>Friendship, emotional support, and campus wellbeing tools with opt-in privacy.</p>
+    </section>
+    <section id="chill" class="section">
+      <h2>Chill Zone</h2>
+      <p>Discover events, cafés, and campus hangouts. RSVP and reminders.</p>
+    </section>
+    <section id="admin" class="section alt">
+      <h2>Admin Dashboard</h2>
+      <p>Privacy-safe analytics on engagement, wellbeing, and performance trends.</p>
+    </section>
+    <section id="demo" class="section">
+      <h2>Demo screens</h2>
+      <div class="cards">
+        <div class="card"><h3>Onboarding</h3><p>Localized, privacy-first setup.</p></div>
+        <div class="card"><h3>Study Timer</h3><p>Pomodoro with streaks and focus stats.</p></div>
+        <div class="card"><h3>Life Feed</h3><p>Share wins, ask, and support peers.</p></div>
+      </div>
+    </section>
+    <section id="contact" class="section">
+      <h2>Get in touch</h2>
+      <form class="contact" onsubmit="event.preventDefault(); alert('Thanks! We will reach out.');">
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="University or work email" required />
+        <button type="submit" class="btn primary">Request pilot</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <span>© <span id="year"></span> CampusVerse</span>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+  </footer>
+  <script src="./app.js"></script>
+</body>
+</html>
